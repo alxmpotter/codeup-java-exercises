@@ -10,13 +10,17 @@ public class ConsoleExercises {
 
         String firstWord, secondWord, thirdWord;
         System.out.println("Enter Three words.");
-        firstWord = scan.next();
+        firstWord  = scan.next();
         System.out.println(firstWord);
         secondWord = scan.next();
         System.out.println(secondWord);
         thirdWord = scan.next();
         System.out.println(thirdWord);
 
+        System.out.println("Enter Three words.");
+
+
     }
 
 }
+
