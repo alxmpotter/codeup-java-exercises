@@ -1,3 +1,7 @@
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 ////////while loop count form 5 to 15
@@ -43,22 +47,30 @@ public class ControlFlowExercises {
 
 /////////////Fizzbuzz
 
-          for(int i = 1; i <= 100; i++){
+//          for(int i = 1; i <= 100; i++){
+//
+//              if(i % 3 != 0 && i % 5 != 0){
+//                System.out.print(i);
+//              }
+//
+//              if(i % 3 == 0){
+//                  System.out.print("fizz");
+//              }
+//
+//              if(i % 5 ==0){
+//                  System.out.print("buzz");
+//              }
+//
+//              System.out.println();
+//
+//          }
 
-              if(i % 3 != 0 && i % 5 != 0){
-                System.out.print(i);
-              }
-              if(i % 3 == 0){
-                  System.out.print("fizz");
-              }
+        int userInput;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a number to square and cube.");
+        userInput = scan.nextInt();
+        System.out.println(userInput);
 
-              if(i % 5 ==0){
-                  System.out.print("buzz");
-              }
-
-              System.out.println();
-
-          }
 
 
     }
