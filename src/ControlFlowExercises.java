@@ -44,17 +44,20 @@ public class ControlFlowExercises {
 /////////////Fizzbuzz
 
           for(int i = 1; i <= 100; i++){
+
+              if(i % 3 != 0 && i % 5 != 0){
+                System.out.print(i);
+              }
               if(i % 3 == 0){
-                  System.out.println(i + " fizz");
+                  System.out.print("fizz");
               }
 
               if(i % 5 ==0){
-                  System.out.println(i + " buzz");
+                  System.out.print("buzz");
               }
 
-              if(i % 3 == 0 && i % 5 == 0){
-                  System.out.println(i + " fizzbuzz");
-              }
+              System.out.println();
+
           }
 
 
