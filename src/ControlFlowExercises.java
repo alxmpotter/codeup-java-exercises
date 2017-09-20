@@ -23,13 +23,12 @@ public class ControlFlowExercises {
 
 /////////do while number squared
 
-//        int i = 2;
+//        long i = 2;
 //
 //        do {
 //            System.out.println(i);
-//            i = i^2;
-//            i++;
-//        } while(i < 1000);
+//            i *= i;
+//        } while(i < 1000000);
 
 ////////////for loops
 
@@ -45,7 +44,7 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 
-/////////////Fizzbuzz
+///////////Fizzbuzz
 
 //          for(int i = 1; i <= 100; i++){
 //
@@ -65,12 +64,24 @@ public class ControlFlowExercises {
 //
 //          }
 
+////////////////Table of Powers
+
         int userInput;
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a number to square and cube.");
         userInput = scan.nextInt();
         System.out.println(userInput);
 
+//        String header = String.format("|%6s|", "number", "|%8s|", "squared");
+//        System.out.printf("|%6s", " number ");
+//        System.out.printf("|%8s", " squared ");
+//        System.out.printf("|%7s|", " cubed ");
+//        System.out.println();
+//        System.out.printf("|%26s|", " ------------- ");
+//        System.out.printf("%8s", " ------ ");
+//        System.out.printf("%7s", " ------ ");
+
+        System.out.println(String.format("|%6s", " number "));
 
 
     }
