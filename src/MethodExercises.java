@@ -41,14 +41,14 @@ public class MethodExercises {
                 System.out.println("Out of range.");
                 getInteger(min, max);
             } else {
-                System.out.println("That works!");
+//                System.out.println("That works!");
             }
-
             return userInput;
+
 
         }
 
-        public static long factorial(){
+        public static void factorial(){
             System.out.println("Let's factor numbers!");
             int userInput = getInteger(1, 10);
 
@@ -59,7 +59,6 @@ public class MethodExercises {
 
             System.out.println(userInput + "! = " + factor);
 
-            return factor;
         }
 
 }
