@@ -5,17 +5,19 @@ public class Input {
 
     private Scanner scanner;
 
-    public Input(Scanner scanner){
-        this.scanner = scanner;
+    public Input(){
+        scanner = new Scanner(System.in);
     }
 
-    public Scanner getString(){
-        return scanner;
+    public String getString(){
+        String userString = scanner.nextLine();
+        return userString;
     }
 
     public boolean yesNo(){
+        System.out.println("y / n?");
         String userInput = scanner.nextLine();
-        return userInput.equals("yes") || userInput.equals("y");
+        return userInput.equalsIgnoreCase("yes") || userInput.equalsIgnoreCase("y");
     }
 
 
@@ -25,10 +27,10 @@ public class Input {
     }
 
     public int getInt(int min, int max) {
-        int userInput = scanner.nextInt();
+        int userInput = getInt();
 
-        if ( userInput < min || userInput> max ) {
-            System.out.println("out of range.");
+        if ( userInput < min || userInput > max ) {
+            System.out.println(userInput + " is not between " + min + " and " + max);
             getInt(min, max);
         } else {
             System.out.println("that works");
@@ -37,12 +39,12 @@ public class Input {
         return userInput;
     }
 
-//    double getDouble(){
-//
-//    }
-//
-//    double getDouble(double min, double max){
-//
-//    }
+    public double getDouble(){
+        return scanner.nextDouble();
+    }
+
+    public double getDouble(double min, double max){
+        return scanner.nextDouble();
+    }
 
 }

@@ -26,7 +26,7 @@ public class Person {
         }
 
         public void sayHello() {
-            System.out.println(name);
+            System.out.println("Hello, " + name + ".");
         }
 
 
