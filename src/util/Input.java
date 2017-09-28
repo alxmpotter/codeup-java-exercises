@@ -22,7 +22,8 @@ public class Input {
 
 
     public int getInt(){
-        return scanner.nextInt();
+        int userInput = scanner.nextInt();
+        return userInput;
 
     }
 
