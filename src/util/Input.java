@@ -14,7 +14,8 @@ public class Input {
         return userString;
     }
 
-    public boolean yesNo(){
+    public boolean yesNo(String prompt){
+        System.out.println(prompt);
         System.out.println("y / n?");
         String userInput = scanner.nextLine();
         return userInput.equalsIgnoreCase("yes") || userInput.equalsIgnoreCase("y");
@@ -48,4 +49,6 @@ public class Input {
         return scanner.nextDouble();
     }
 
+//    public String nextLine() {
+//    }
 }

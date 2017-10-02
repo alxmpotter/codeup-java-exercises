@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MethodExercises {
+public class MethodsExercises {
     public static void main(String[] args) {
         System.out.println(add(5,5));
         System.out.println(subtract(50, 50));
