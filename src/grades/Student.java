@@ -2,9 +2,9 @@ package grades;
 import java.util.ArrayList;
 
 public class Student {
-    protected String name;
+    private String name;
     //ArrayList<Integer> is data type
-    protected ArrayList<Integer> grades;
+    private ArrayList<Integer> grades;
 
     //constructor initializes grades as an empty array
     public Student(String name){
@@ -21,7 +21,7 @@ public class Student {
     }
 
     public void addGrade(int grade){
-        grades.add(grade);
+        this.grades.add(grade);
     }
 
     public double getGradeAverages(){

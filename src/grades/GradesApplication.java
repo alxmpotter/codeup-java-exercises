@@ -1,5 +1,4 @@
 package grades;
-
 import java.util.HashMap;
 import util.Input;
 //import java.util.ArrayList;
@@ -33,8 +32,6 @@ public class GradesApplication extends Student {
         students.put("LuisMontealegre", luis);
         students.put("FernandoMendoza", fer);
 
-
-
         System.out.println("Github user-names: \n");
 
         for(String usernames : students.keySet()){
@@ -43,16 +40,23 @@ public class GradesApplication extends Student {
 
 
         Input input = new Input();
-        Input input2 = new Input();
-        String keyValue = input.getString();
+//        Input input2 = new Input();
+//        String keyValue = input.getString();
+//
+        while(true){
+            System.out.println("Would you like to continue?");
+            if(!input.yesNo("")){
 
-            do {
-                if(students.get(keyValue) ){
-                    System.out.println("Name: " + students.get(keyValue).getName() + "\ngrade average: " + students.get(keyValue).getGradeAverages());
-                } else {
-                    System.out.println(keyValue + " is not a current student");
-                }
-            } while(input2.yesNo("Would you like to continue?"));
+            }
+        }
+
+//            do {
+//                if(students.get(keyValue) ==  ){
+//                    System.out.println("Name: " + students.get(keyValue).getName() + "\ngrade average: " + students.get(keyValue).getGradeAverages());
+//                } else {
+//                    System.out.println(keyValue + " is not a current student");
+//                }
+//            } while(input2.yesNo("Would you like to continue?"));
 
     }
 }
